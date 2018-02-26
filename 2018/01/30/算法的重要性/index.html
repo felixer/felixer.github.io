@@ -3,25 +3,26 @@
 <head>
   <meta charset="utf-8">
   
-  <title>纪念第一篇博客 | 算法、数据、生活</title>
+  <title>选择排序 | 算法、数据、生活</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
+  <meta name="keywords" content="算法" />
   
   
   
-  <meta name="description" content="前言 一路走来，经历了很多，充满了矛盾，总是自命不凡却又蹉跎岁月。不过我仍然坚信自己与众不同，也许没有别人聪明，也许没有别人努力，一直以来我觉得自己最有优势的就是能够发现问题的本质。这是我第一篇博客，主要用来记录自己生活、学习、工作的点点滴滴，是对自己的一种反思和检查。希望你越来越好，成为你当初心中的那个自己。   未来的路学习准备开始学习大数据相关的技术，列了一个计划：  明天开始第一天，Fig">
+  
+  <meta name="description" content="选择排序 算法无处不在，工作、生活（百度、Google、人工智能、推荐算法）、游戏、性能优化，无处不在 学好算法，才能创造出更多有意义的东西,做一个真正的科学家，而不是仅仅码农。 什么时候开始都不晚，😑！   线性 树形 图论  选择排序的时间复杂度为O(n^2),排序类的最小复杂度时间为O(nlogn)： 基础  比较基础，容易实现，是一些简单场景的首选； 在一些特殊情况下简单算法更加的有效；">
+<meta name="keywords" content="算法">
 <meta property="og:type" content="article">
-<meta property="og:title" content="纪念第一篇博客">
-<meta property="og:url" content="http://yoursite.com/2018/01/28/纪念第一篇博客/index.html">
+<meta property="og:title" content="选择排序">
+<meta property="og:url" content="http://yoursite.com/2018/01/30/算法的重要性/index.html">
 <meta property="og:site_name" content="算法、数据、生活">
-<meta property="og:description" content="前言 一路走来，经历了很多，充满了矛盾，总是自命不凡却又蹉跎岁月。不过我仍然坚信自己与众不同，也许没有别人聪明，也许没有别人努力，一直以来我觉得自己最有优势的就是能够发现问题的本质。这是我第一篇博客，主要用来记录自己生活、学习、工作的点点滴滴，是对自己的一种反思和检查。希望你越来越好，成为你当初心中的那个自己。   未来的路学习准备开始学习大数据相关的技术，列了一个计划：  明天开始第一天，Fig">
+<meta property="og:description" content="选择排序 算法无处不在，工作、生活（百度、Google、人工智能、推荐算法）、游戏、性能优化，无处不在 学好算法，才能创造出更多有意义的东西,做一个真正的科学家，而不是仅仅码农。 什么时候开始都不晚，😑！   线性 树形 图论  选择排序的时间复杂度为O(n^2),排序类的最小复杂度时间为O(nlogn)： 基础  比较基础，容易实现，是一些简单场景的首选； 在一些特殊情况下简单算法更加的有效；">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://yoursite.com/2018/01/28/纪念第一篇博客/plan2018.png">
-<meta property="og:updated_time" content="2018-01-30T10:57:13.000Z">
+<meta property="og:updated_time" content="2018-01-31T02:17:49.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="纪念第一篇博客">
-<meta name="twitter:description" content="前言 一路走来，经历了很多，充满了矛盾，总是自命不凡却又蹉跎岁月。不过我仍然坚信自己与众不同，也许没有别人聪明，也许没有别人努力，一直以来我觉得自己最有优势的就是能够发现问题的本质。这是我第一篇博客，主要用来记录自己生活、学习、工作的点点滴滴，是对自己的一种反思和检查。希望你越来越好，成为你当初心中的那个自己。   未来的路学习准备开始学习大数据相关的技术，列了一个计划：  明天开始第一天，Fig">
-<meta name="twitter:image" content="http://yoursite.com/2018/01/28/纪念第一篇博客/plan2018.png">
+<meta name="twitter:title" content="选择排序">
+<meta name="twitter:description" content="选择排序 算法无处不在，工作、生活（百度、Google、人工智能、推荐算法）、游戏、性能优化，无处不在 学好算法，才能创造出更多有意义的东西,做一个真正的科学家，而不是仅仅码农。 什么时候开始都不晚，😑！   线性 树形 图论  选择排序的时间复杂度为O(n^2),排序类的最小复杂度时间为O(nlogn)： 基础  比较基础，容易实现，是一些简单场景的首选； 在一些特殊情况下简单算法更加的有效；">
   
     <link rel="alternate" href="/atom.xml" title="算法、数据、生活" type="application/atom+xml">
   
@@ -159,7 +160,7 @@
             
       <div id="content" class="outer">
         
-          <section id="main" style="float:none;"><article id="post-纪念第一篇博客" style="width: 75%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
+          <section id="main" style="float:none;"><article id="post-算法的重要性" style="width: 75%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
   <div id="articleInner" class="article-inner">
     
     
@@ -167,7 +168,7 @@
         
   
     <h1 class="thumb" class="article-title" itemprop="name">
-      纪念第一篇博客
+      选择排序
     </h1>
   
 
@@ -175,12 +176,12 @@
     
     <div class="article-meta">
       
-	<a href="/2018/01/28/纪念第一篇博客/" class="article-date">
-	  <time datetime="2018-01-28T13:13:58.000Z" itemprop="datePublished">2018-01-28</time>
+	<a href="/2018/01/30/算法的重要性/" class="article-date">
+	  <time datetime="2018-01-30T10:56:32.000Z" itemprop="datePublished">2018-01-30</time>
 	</a>
 
       
-    <a class="article-category-link" href="/categories/生活/">生活</a><a class="article-category-link" href="/categories/生活/感悟/">感悟</a>
+    <a class="article-category-link" href="/categories/算法/">算法</a><a class="article-category-link" href="/categories/算法/基础/">基础</a><a class="article-category-link" href="/categories/算法/基础/排序/">排序</a>
 
       
 	<a class="article-views">
@@ -192,12 +193,28 @@
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>一路走来，经历了很多，充满了矛盾，总是自命不凡却又蹉跎岁月。不过我仍然坚信自己与众不同，也许没有别人聪明，也许没有别人努力，一直以来我觉得自己最有优势的就是能够发现问题的本质。这是我第一篇博客，主要用来记录自己生活、学习、工作的点点滴滴，是对自己的一种反思和检查。希望你越来越好，成为你当初心中的那个自己。 </p>
+        <h2 id="选择排序"><a href="#选择排序" class="headerlink" title="选择排序"></a>选择排序</h2><blockquote>
+<p>算法无处不在，工作、生活（百度、Google、人工智能、推荐算法）、游戏、性能优化，无处不在</p>
+<p>学好算法，才能创造出更多有意义的东西,做一个真正的科学家，而不是仅仅码农。</p>
+<p>什么时候开始都不晚，😑！</p>
 </blockquote>
-<h2 id="未来的路"><a href="#未来的路" class="headerlink" title="未来的路"></a>未来的路</h2><h3 id="学习"><a href="#学习" class="headerlink" title="学习"></a>学习</h3><p>准备开始学习大数据相关的技术，列了一个计划：</p>
-<img src="/2018/01/28/纪念第一篇博客/plan2018.png">
-<p>明天开始第一天，Fighting！</p>
+<ol>
+<li>线性</li>
+<li>树形</li>
+<li>图论</li>
+</ol>
+<p>选择排序的时间复杂度为O(n^2),排序类的最小复杂度时间为O(nlogn)：</p>
+<p>基础</p>
+<ol>
+<li>比较基础，容易实现，是一些简单场景的首选；</li>
+<li>在一些特殊情况下简单算法更加的有效；</li>
+<li>通过简单算法进而衍生出复杂算法是有效的思维方式，作为子过程进行复用；</li>
+</ol>
+<blockquote>
+<p>选择排序：对待排序数据进行遍历，从带遍历中选出一个最小的一个元素，将其放到第一的位置，重复执行，直到最后一个元素为止。</p>
+</blockquote>
+<a id="more"></a>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SelectionSort</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">sort</span><span class="params">(<span class="keyword">int</span>[] arr)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> n = arr.length;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">            <span class="keyword">int</span> minIndex = i;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j= i + <span class="number">1</span>; j&lt;n ; j++) &#123;</span><br><span class="line">                <span class="keyword">if</span>(arr[j]&lt;arr[minIndex])</span><br><span class="line">                    minIndex = j;</span><br><span class="line">            &#125;</span><br><span class="line">            swap(arr,i, minIndex);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">swap</span><span class="params">(<span class="keyword">int</span>[] arr,<span class="keyword">int</span> i,<span class="keyword">int</span> minIndex)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> t = arr[i];</span><br><span class="line">        arr[i] = arr[minIndex];</span><br><span class="line">        arr[minIndex] = t;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span>[] arr = &#123;<span class="number">10</span>,<span class="number">9</span>,<span class="number">8</span>,<span class="number">7</span>,<span class="number">6</span>,<span class="number">5</span>,<span class="number">4</span>,<span class="number">3</span>,<span class="number">2</span>,<span class="number">1</span>&#125;;</span><br><span class="line">        SelectionSort.sort(arr);</span><br><span class="line">        <span class="keyword">for</span>( <span class="keyword">int</span> i = <span class="number">0</span> ; i &lt; arr.length ; i ++ )&#123;</span><br><span class="line">            System.out.print(arr[i]);</span><br><span class="line">            System.out.print(<span class="string">' '</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">输出&gt;<span class="number">1</span> <span class="number">2</span> <span class="number">3</span> <span class="number">4</span> <span class="number">5</span> <span class="number">6</span> <span class="number">7</span> <span class="number">8</span> <span class="number">9</span> <span class="number">10</span></span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -230,21 +247,28 @@
 
       
       
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/算法/">算法</a></li></ul>
+
     </footer>
   </div>
   
     
 <nav id="article-nav">
   
-    <a href="/2018/01/30/算法的重要性/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2018/01/31/选择排序-泛型、性能测试/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">上一篇</strong>
       <div class="article-nav-title">
         
-          选择排序
+          选择排序-泛型、性能测试
         
       </div>
     </a>
   
+  
+    <a href="/2018/01/28/纪念第一篇博客/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">下一篇</strong>
+      <div class="article-nav-title">纪念第一篇博客</div>
+    </a>
   
 </nav>
 
@@ -257,7 +281,7 @@
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
     
-        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#未来的路"><span class="nav-number">2.</span> <span class="nav-text">未来的路</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#学习"><span class="nav-number">2.1.</span> <span class="nav-text">学习</span></a></li></ol></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#选择排序"><span class="nav-number">1.</span> <span class="nav-text">选择排序</span></a></li></ol>
     
     </div>
   </aside>
