@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   
-  <title>python安装  | 算法、数据、生活</title>
+  <title>mac 安装virtualenv  | 算法、数据、生活</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
   <meta name="keywords" content="python安装" />
@@ -11,18 +11,18 @@
   
   
   
-  <meta name="description" content="学习总结 思考感悟">
+  <meta name="description" content="Mac 安装virtualenv场景很多情况下， 我们需要在同一台机器上， 开发运行多个python进程， 而这些进程有的需要使用python3， 有的需要使用python2， 这就导致我们经常把服务器的环境搞得很混乱在这种情况下， 我们就可以引入virutalenv了 什么是virtualenvvirtualenv 就是为应对以上需要创建属于各个python进程的运行隔离环境而生的，在同一个服务">
 <meta name="keywords" content="python,安装">
 <meta property="og:type" content="article">
-<meta property="og:title" content="python安装 ">
+<meta property="og:title" content="Mac 安装virtualenv ">
 <meta property="og:url" content="http://yoursite.com/2018/02/26/python安装/index.html">
 <meta property="og:site_name" content="算法、数据、生活">
-<meta property="og:description" content="学习总结 思考感悟">
+<meta property="og:description" content="Mac 安装virtualenv场景很多情况下， 我们需要在同一台机器上， 开发运行多个python进程， 而这些进程有的需要使用python3， 有的需要使用python2， 这就导致我们经常把服务器的环境搞得很混乱在这种情况下， 我们就可以引入virutalenv了 什么是virtualenvvirtualenv 就是为应对以上需要创建属于各个python进程的运行隔离环境而生的，在同一个服务">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-02-26T13:31:33.000Z">
+<meta property="og:updated_time" content="2018-02-26T13:50:12.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="python安装 ">
-<meta name="twitter:description" content="学习总结 思考感悟">
+<meta name="twitter:title" content="Mac 安装virtualenv ">
+<meta name="twitter:description" content="Mac 安装virtualenv场景很多情况下， 我们需要在同一台机器上， 开发运行多个python进程， 而这些进程有的需要使用python3， 有的需要使用python2， 这就导致我们经常把服务器的环境搞得很混乱在这种情况下， 我们就可以引入virutalenv了 什么是virtualenvvirtualenv 就是为应对以上需要创建属于各个python进程的运行隔离环境而生的，在同一个服务">
   
     <link rel="alternate" href="/atom.xml" title="算法、数据、生活" type="application/atom+xml">
   
@@ -168,7 +168,7 @@
         
   
     <h1 class="thumb" class="article-title" itemprop="name">
-      python安装 
+      Mac 安装virtualenv 
     </h1>
   
 
@@ -193,7 +193,24 @@
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h1 id="Mac-安装virtualenv"><a href="#Mac-安装virtualenv" class="headerlink" title="Mac 安装virtualenv"></a>Mac 安装virtualenv</h1><h2 id="场景"><a href="#场景" class="headerlink" title="场景"></a>场景</h2><p>很多情况下， 我们需要在同一台机器上， 开发运行多个python进程， 而这些进程有的需要使用python3， 有的需要使用python2， 这就导致我们经常把服务器的环境搞得很混乱在这种情况下， 我们就可以引入virutalenv了</p>
+<h2 id="什么是virtualenv"><a href="#什么是virtualenv" class="headerlink" title="什么是virtualenv"></a>什么是virtualenv</h2><p>virtualenv 就是为应对以上需要创建属于各个python进程的运行隔离环境而生的，在同一个服务器中， 我们可以使用virutalenv 创建多个python隔离环境， 每个python隔离环境可以独立的运行该环境下的python进程， 并且安装对应环境中的python扩展包。比如， 有两个服务进程， 一个需要使用py2.7， 另一个需要使用py3.5， 而且可能需要安装各自的扩展包。 这时我们就可以使用virtualenv分别创建两个隔离环境， 一个用于运行python2.7， 一个用于运行python3.5即可。</p>
+<h2 id="安装virutalenv"><a href="#安装virutalenv" class="headerlink" title="安装virutalenv"></a>安装virutalenv</h2><p>因为我使用的是mac， 所以一下均在mac上的操作</p>
+<p>第一步， 需要安装pip，pip是unix系统下python的包管理工具， 我的安装步骤如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">curl -o get-pip.py https://bootstrap.pypa.io/get-pip.py</span><br><span class="line">sudo python get-pip.py</span><br></pre></td></tr></table></figure>
+<p>即可安装</p>
+<h2 id="使用pip安装virtualenv"><a href="#使用pip安装virtualenv" class="headerlink" title="使用pip安装virtualenv"></a>使用pip安装virtualenv</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo pip install virtualenv</span><br></pre></td></tr></table></figure>
+<p>这样我们就安装好了virtualenv</p>
+<h2 id="如何使用"><a href="#如何使用" class="headerlink" title="如何使用"></a>如何使用</h2><p>比如我想隔离出python2.7的环境、分两步</p>
+<h2 id="第一步：-创建隔离环境"><a href="#第一步：-创建隔离环境" class="headerlink" title="第一步： 创建隔离环境"></a>第一步： 创建隔离环境</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">virtualenv py2.7</span><br></pre></td></tr></table></figure>
+<p>这里py2.7只是一个环境名称， 可以任意起名字、这样， 在运行该条命令的目录下就会有一个py2.7的目录名， 该目录下就是创建的这个python隔离环境所需的所有内容， 包含了对应版本的python命令， pip管理工具等等内容</p>
+<h2 id="第二步：激活隔离环境"><a href="#第二步：激活隔离环境" class="headerlink" title="第二步：激活隔离环境"></a>第二步：激活隔离环境</h2><p>我们创建好环境后， 并未处于该环境中， 所以我们需要激活该环境， 仅需要一条命令<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source py2.7/bin/activate</span><br></pre></td></tr></table></figure></p>
+<p>source下该环境下bin目录下的activate即可</p>
+<p>现在， 你所添加的扩展和运行的环境， 都处于这个隔离环境中了， 如果还需要一个python3.5的环境， 你可以在安装好python3.5（不要在任何隔离环境中）后， 创建隔离环境时，指定python版本即可， 如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">virtualenv -p python3.5 py3.5</span><br></pre></td></tr></table></figure>
+<h2 id="如何退出隔离环境"><a href="#如何退出隔离环境" class="headerlink" title="如何退出隔离环境"></a>如何退出隔离环境</h2><p>运行<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">deactivate</span><br></pre></td></tr></table></figure></p>
+<p>即可</p>
+
       
     </div>
     <footer class="article-footer">
@@ -233,6 +250,15 @@
     
 <nav id="article-nav">
   
+    <a href="/2018/02/27/java项目结构/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">上一篇</strong>
+      <div class="article-nav-title">
+        
+          基于Maven搭建Java后台项目工程结构
+        
+      </div>
+    </a>
+  
   
     <a href="/2018/02/26/python简介/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">下一篇</strong>
@@ -250,7 +276,7 @@
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
     
-        <ol class="nav">无</ol>
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Mac-安装virtualenv"><span class="nav-number">1.</span> <span class="nav-text">Mac 安装virtualenv</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#场景"><span class="nav-number">1.1.</span> <span class="nav-text">场景</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是virtualenv"><span class="nav-number">1.2.</span> <span class="nav-text">什么是virtualenv</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装virutalenv"><span class="nav-number">1.3.</span> <span class="nav-text">安装virutalenv</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用pip安装virtualenv"><span class="nav-number">1.4.</span> <span class="nav-text">使用pip安装virtualenv</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如何使用"><span class="nav-number">1.5.</span> <span class="nav-text">如何使用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第一步：-创建隔离环境"><span class="nav-number">1.6.</span> <span class="nav-text">第一步： 创建隔离环境</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第二步：激活隔离环境"><span class="nav-number">1.7.</span> <span class="nav-text">第二步：激活隔离环境</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如何退出隔离环境"><span class="nav-number">1.8.</span> <span class="nav-text">如何退出隔离环境</span></a></li></ol></li></ol>
     
     </div>
   </aside>

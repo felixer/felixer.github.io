@@ -189,6 +189,54 @@
         
           <section id="main" style="float:none;">
   
+    <article id="post-java项目结构"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2018/02/27/java项目结构/">基于Maven搭建Java后台项目工程结构</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2018/02/27/java项目结构/" class="article-date">
+	  <time datetime="2018-02-27T05:23:31.000Z" itemprop="datePublished">2018-02-27</time>
+	</a>
+
+      
+    <a class="article-category-link" href="/categories/java/">java</a><a class="article-category-link" href="/categories/java/maven/">maven</a>
+
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="项目结构"><a href="#项目结构" class="headerlink" title="项目结构"></a>项目结构</h2><p>Maven的常见打包方式：jar、war、pom<br>Pom工程一般都是父工程，管理JAR包的版本，maven插件的版本，统一的依赖管理。聚合工程<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">project-parent: 父工程，打包方式POM，管理Jar包的版本号。项目中所有工程都应继承父工程。</span><br><span class="line">    |-- project-common: 通用的工具类通用的pojo。打包方式jar。</span><br><span class="line">    |-- project-manager: 服务层工程，聚合工程，Pom工程。</span><br><span class="line">        |-- project-manager-dao: jar</span><br><span class="line">        |-- project-manager-pojo: jar</span><br><span class="line">        |-- project-manager-interface: jar</span><br><span class="line">        |-- project-manager-service: war</span><br><span class="line">    |-- project-manager-web:表现层工程，打包方式war</span><br></pre></td></tr></table></figure></p>
+        <!-- 项目结构Maven的常见打包方式：jar、war、pomPom工程一般都是父工程，管理JAR包的版本，maven插件的版本，统一的依赖管理。聚合工程12345678project-parent: 父工程，打包方式POM，管理Jar包的版本号。项目中所有工程都应继承父工程。    |-- project-common: 通用的工具类通用的pojo。打包方式jar。    |-- project......  -->
+        <p class="article-more-link">
+          <a href="/2018/02/27/java项目结构/#more">阅读全文</a>
+        </p>
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java/">java</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/结构/">结构</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+  
     <article id="post-python安装"  class="article article-type-post" itemscope itemprop="blogPost" >
   <div id="articleInner" class="article-inner">
     
@@ -197,7 +245,7 @@
         
   
     <h1 class="thumb" itemprop="name">
-      <a class="article-title" href="/2018/02/26/python安装/">python安装 </a>
+      <a class="article-title" href="/2018/02/26/python安装/">Mac 安装virtualenv </a>
     </h1>
   
 
@@ -216,7 +264,24 @@
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h1 id="Mac-安装virtualenv"><a href="#Mac-安装virtualenv" class="headerlink" title="Mac 安装virtualenv"></a>Mac 安装virtualenv</h1><h2 id="场景"><a href="#场景" class="headerlink" title="场景"></a>场景</h2><p>很多情况下， 我们需要在同一台机器上， 开发运行多个python进程， 而这些进程有的需要使用python3， 有的需要使用python2， 这就导致我们经常把服务器的环境搞得很混乱在这种情况下， 我们就可以引入virutalenv了</p>
+<h2 id="什么是virtualenv"><a href="#什么是virtualenv" class="headerlink" title="什么是virtualenv"></a>什么是virtualenv</h2><p>virtualenv 就是为应对以上需要创建属于各个python进程的运行隔离环境而生的，在同一个服务器中， 我们可以使用virutalenv 创建多个python隔离环境， 每个python隔离环境可以独立的运行该环境下的python进程， 并且安装对应环境中的python扩展包。比如， 有两个服务进程， 一个需要使用py2.7， 另一个需要使用py3.5， 而且可能需要安装各自的扩展包。 这时我们就可以使用virtualenv分别创建两个隔离环境， 一个用于运行python2.7， 一个用于运行python3.5即可。</p>
+<h2 id="安装virutalenv"><a href="#安装virutalenv" class="headerlink" title="安装virutalenv"></a>安装virutalenv</h2><p>因为我使用的是mac， 所以一下均在mac上的操作</p>
+<p>第一步， 需要安装pip，pip是unix系统下python的包管理工具， 我的安装步骤如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">curl -o get-pip.py https://bootstrap.pypa.io/get-pip.py</span><br><span class="line">sudo python get-pip.py</span><br></pre></td></tr></table></figure>
+<p>即可安装</p>
+<h2 id="使用pip安装virtualenv"><a href="#使用pip安装virtualenv" class="headerlink" title="使用pip安装virtualenv"></a>使用pip安装virtualenv</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo pip install virtualenv</span><br></pre></td></tr></table></figure>
+<p>这样我们就安装好了virtualenv</p>
+<h2 id="如何使用"><a href="#如何使用" class="headerlink" title="如何使用"></a>如何使用</h2><p>比如我想隔离出python2.7的环境、分两步</p>
+<h2 id="第一步：-创建隔离环境"><a href="#第一步：-创建隔离环境" class="headerlink" title="第一步： 创建隔离环境"></a>第一步： 创建隔离环境</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">virtualenv py2.7</span><br></pre></td></tr></table></figure>
+<p>这里py2.7只是一个环境名称， 可以任意起名字、这样， 在运行该条命令的目录下就会有一个py2.7的目录名， 该目录下就是创建的这个python隔离环境所需的所有内容， 包含了对应版本的python命令， pip管理工具等等内容</p>
+<h2 id="第二步：激活隔离环境"><a href="#第二步：激活隔离环境" class="headerlink" title="第二步：激活隔离环境"></a>第二步：激活隔离环境</h2><p>我们创建好环境后， 并未处于该环境中， 所以我们需要激活该环境， 仅需要一条命令<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source py2.7/bin/activate</span><br></pre></td></tr></table></figure></p>
+<p>source下该环境下bin目录下的activate即可</p>
+<p>现在， 你所添加的扩展和运行的环境， 都处于这个隔离环境中了， 如果还需要一个python3.5的环境， 你可以在安装好python3.5（不要在任何隔离环境中）后， 创建隔离环境时，指定python版本即可， 如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">virtualenv -p python3.5 py3.5</span><br></pre></td></tr></table></figure>
+<h2 id="如何退出隔离环境"><a href="#如何退出隔离环境" class="headerlink" title="如何退出隔离环境"></a>如何退出隔离环境</h2><p>运行<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">deactivate</span><br></pre></td></tr></table></figure></p>
+<p>即可</p>
+
       
     </div>
     <footer class="article-footer">
