@@ -25,7 +25,14 @@
 <meta property="og:image" content="http://yoursite.com/2018/03/02/密码学、数字签名/p4.png">
 <meta property="og:image" content="http://yoursite.com/2018/03/02/密码学、数字签名/p5.png">
 <meta property="og:image" content="http://yoursite.com/2018/03/02/密码学、数字签名/p6.png">
-<meta property="og:updated_time" content="2018-03-02T00:36:01.000Z">
+<meta property="og:image" content="http://yoursite.com/2018/03/02/密码学、数字签名/p7.png">
+<meta property="og:image" content="http://yoursite.com/2018/03/02/密码学、数字签名/p8.png">
+<meta property="og:image" content="http://yoursite.com/2018/03/02/密码学、数字签名/p9.png">
+<meta property="og:image" content="http://yoursite.com/2018/03/02/密码学、数字签名/p10.png">
+<meta property="og:image" content="http://yoursite.com/2018/03/02/密码学、数字签名/p11.png">
+<meta property="og:image" content="http://yoursite.com/2018/03/02/密码学、数字签名/p12.png">
+<meta property="og:image" content="http://yoursite.com/2018/03/02/密码学、数字签名/p13.png">
+<meta property="og:updated_time" content="2018-03-02T01:00:42.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="密码学、数字签名">
 <meta name="twitter:description" content="密码学基础 加密方法可以分为两大类。一类是单钥加密（private key cryptography），还有一类叫做双钥加密（public key cryptography）。前者的加密和解密过程都用同一套密码，后者的加密和解密过程用的是两套密码。 在单钥加密的情况下，密钥只有一把，所以密钥的保存变得很重要。一旦密钥泄漏，密码也就被破解。 在双钥加密的情况下，密钥有两把，一把是公开的公钥，还有一把">
@@ -225,13 +232,13 @@
 <img src="/2018/03/02/密码学、数字签名/p4.png"></li>
 <li>鲍勃给苏珊回信，决定采用”数字签名”。他写完后先用Hash函数，生成信件的摘要（digest）。<img src="/2018/03/02/密码学、数字签名/p5.png"></li>
 <li>然后，鲍勃使用私钥，对这个摘要加密，生成”数字签名”（signature）。<img src="/2018/03/02/密码学、数字签名/p6.png"></li>
-<li>鲍勃将这个签名，附在信件下面，一起发给苏珊。</li>
-<li>苏珊收信后，取下数字签名，用鲍勃的公钥解密，得到信件的摘要。由此证明，这封信确实是鲍勃发出的。</li>
-<li>苏珊再对信件本身使用Hash函数，将得到的结果，与上一步得到的摘要进行对比。如果两者一致，就证明这封信未被修改过。</li>
-<li>复杂的情况出现了。道格想欺骗苏珊，他偷偷使用了苏珊的电脑，用自己的公钥换走了鲍勃的公钥。此时，苏珊实际拥有的是道格的公钥，但是还以为这是鲍勃的公钥。因此，道格就可以冒充鲍勃，用自己的私钥做成”数字签名”，写信给苏珊，让苏珊用假的鲍勃公钥进行解密。</li>
-<li>后来，苏珊感觉不对劲，发现自己无法确定公钥是否真的属于鲍勃。她想到了一个办法，要求鲍勃去找”证书中心”（certificate authority，简称CA），为公钥做认证。证书中心用自己的私钥，对鲍勃的公钥和一些相关信息一起加密，生成”数字证书”（Digital Certificate）。</li>
-<li>鲍勃拿到数字证书以后，就可以放心了。以后再给苏珊写信，只要在签名的同时，再附上数字证书就行了。</li>
-<li>苏珊收信后，用CA的公钥解开数字证书，就可以拿到鲍勃真实的公钥了，然后就能证明”数字签名”是否真的是鲍勃签的。
+<li>鲍勃将这个签名，附在信件下面，一起发给苏珊。<img src="/2018/03/02/密码学、数字签名/p7.png"></li>
+<li>苏珊收信后，取下数字签名，用鲍勃的公钥解密，得到信件的摘要。由此证明，这封信确实是鲍勃发出的。<img src="/2018/03/02/密码学、数字签名/p8.png"></li>
+<li>苏珊再对信件本身使用Hash函数，将得到的结果，与上一步得到的摘要进行对比。如果两者一致，就证明这封信未被修改过。<img src="/2018/03/02/密码学、数字签名/p9.png"></li>
+<li>复杂的情况出现了。道格想欺骗苏珊，他偷偷使用了苏珊的电脑，用自己的公钥换走了鲍勃的公钥。此时，苏珊实际拥有的是道格的公钥，但是还以为这是鲍勃的公钥。因此，道格就可以冒充鲍勃，用自己的私钥做成”数字签名”，写信给苏珊，让苏珊用假的鲍勃公钥进行解密。<img src="/2018/03/02/密码学、数字签名/p10.png"></li>
+<li>后来，苏珊感觉不对劲，发现自己无法确定公钥是否真的属于鲍勃。她想到了一个办法，要求鲍勃去找”证书中心”（certificate authority，简称CA），为公钥做认证。证书中心用自己的私钥，对鲍勃的公钥和一些相关信息一起加密，生成”数字证书”（Digital Certificate）。<img src="/2018/03/02/密码学、数字签名/p11.png"></li>
+<li>鲍勃拿到数字证书以后，就可以放心了。以后再给苏珊写信，只要在签名的同时，再附上数字证书就行了。<img src="/2018/03/02/密码学、数字签名/p12.png"></li>
+<li>苏珊收信后，用CA的公钥解开数字证书，就可以拿到鲍勃真实的公钥了，然后就能证明”数字签名”是否真的是鲍勃签的。<img src="/2018/03/02/密码学、数字签名/p13.png">
 </li>
 </ol>
 
