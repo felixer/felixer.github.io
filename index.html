@@ -189,6 +189,110 @@
         
           <section id="main" style="float:none;">
   
+    <article id="post-密码学、数字签名"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2018/03/02/密码学、数字签名/">密码学、数字签名</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2018/03/02/密码学、数字签名/" class="article-date">
+	  <time datetime="2018-03-02T00:01:21.000Z" itemprop="datePublished">2018-03-02</time>
+	</a>
+
+      
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="密码学基础"><a href="#密码学基础" class="headerlink" title="密码学基础"></a>密码学基础</h2><ol>
+<li>加密方法可以分为两大类。一类是单钥加密（private key cryptography），还有一类叫做双钥加密（public key cryptography）。前者的加密和解密过程都用同一套密码，后者的加密和解密过程用的是两套密码。</li>
+<li>在单钥加密的情况下，密钥只有一把，所以密钥的保存变得很重要。一旦密钥泄漏，密码也就被破解。</li>
+<li><p>在双钥加密的情况下，密钥有两把，一把是公开的公钥，还有一把是不公开的私钥。<br>双钥加密的原理如下：<br> a) 公钥和私钥是一一对应的关系，有一把公钥就必然有一把与之对应的、独一无二的私钥，反之亦成立。</p>
+<p> b) 所有的（公钥, 私钥）对都是不同的。</p>
+<p> c) 用公钥可以解开私钥加密的信息，反之亦成立。</p>
+<p> d) 同时生成公钥和私钥应该相对比较容易，但是从公钥推算出私钥，应该是很困难或者是不可能的。</p>
+</li>
+<li>目前，通用的单钥加密算法为DES（Data Encryption Standard），通用的双钥加密算法为RSA（ Rivest-Shamir-Adleman），都产生于上个世纪70年代。</li>
+<li>在双钥体系中，公钥用来加密信息，私钥用来数字签名。</li>
+<li>因为任何人都可以生成自己的（公钥，私钥）对，所以为了防止有人散布伪造的公钥骗取信任，就需要一个可靠的第三方机构来生成经过认证的（公钥，私钥）对。目前，世界上最主要的数字服务认证商是位于美国加州的Verisign公司，它的主要业务就是分发RSA数字证书。</li>
+</ol>
+        <!-- 密码学基础
+加密方法可以分为两大类。一类是单钥加密（private key cryptography），还有一类叫做双钥加密（public key cryptography）。前者的加密和解密过程都用同一套密码，后者的加密和解密过程用的是两套密码。
+在单钥加密的情况下，密钥只有一把，所以密钥的保存变得很重要。一旦密钥泄漏，密码也就被破解。
+在双钥加密的情况下，密钥有两把，一把是公开的公钥，还......  -->
+        <p class="article-more-link">
+          <a href="/2018/03/02/密码学、数字签名/#more">阅读全文</a>
+        </p>
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/密码学/">密码学</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+  
+    <article id="post-SSM框架整合"  class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2018/03/01/SSM框架整合/">SSM框架整合</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2018/03/01/SSM框架整合/" class="article-date">
+	  <time datetime="2018-03-01T05:45:35.000Z" itemprop="datePublished">2018-03-01</time>
+	</a>
+
+      
+    <a class="article-category-link" href="/categories/java/">java</a><a class="article-category-link" href="/categories/java/maven/">maven</a>
+
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java/">java</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+  
     <article id="post-java项目结构"  class="article article-type-post" itemscope itemprop="blogPost" >
   <div id="articleInner" class="article-inner">
     

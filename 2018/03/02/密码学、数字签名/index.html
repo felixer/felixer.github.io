@@ -3,22 +3,33 @@
 <head>
   <meta charset="utf-8">
   
-  <title>category: java | 算法、数据、生活</title>
+  <title>密码学、数字签名 | 算法、数据、生活</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
+  <meta name="keywords" content="密码学" />
   
   
   
-  <meta name="description" content="学习总结 思考感悟">
-<meta property="og:type" content="website">
-<meta property="og:title" content="算法、数据、生活">
-<meta property="og:url" content="http://yoursite.com/categories/java/index.html">
+  
+  <meta name="description" content="密码学基础 加密方法可以分为两大类。一类是单钥加密（private key cryptography），还有一类叫做双钥加密（public key cryptography）。前者的加密和解密过程都用同一套密码，后者的加密和解密过程用的是两套密码。 在单钥加密的情况下，密钥只有一把，所以密钥的保存变得很重要。一旦密钥泄漏，密码也就被破解。 在双钥加密的情况下，密钥有两把，一把是公开的公钥，还有一把">
+<meta name="keywords" content="密码学">
+<meta property="og:type" content="article">
+<meta property="og:title" content="密码学、数字签名">
+<meta property="og:url" content="http://yoursite.com/2018/03/02/密码学、数字签名/index.html">
 <meta property="og:site_name" content="算法、数据、生活">
-<meta property="og:description" content="学习总结 思考感悟">
+<meta property="og:description" content="密码学基础 加密方法可以分为两大类。一类是单钥加密（private key cryptography），还有一类叫做双钥加密（public key cryptography）。前者的加密和解密过程都用同一套密码，后者的加密和解密过程用的是两套密码。 在单钥加密的情况下，密钥只有一把，所以密钥的保存变得很重要。一旦密钥泄漏，密码也就被破解。 在双钥加密的情况下，密钥有两把，一把是公开的公钥，还有一把">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://yoursite.com/2018/03/02/密码学、数字签名/p1.png">
+<meta property="og:image" content="http://yoursite.com/2018/03/02/密码学、数字签名/p2.png">
+<meta property="og:image" content="http://yoursite.com/2018/03/02/密码学、数字签名/p3.png">
+<meta property="og:image" content="http://yoursite.com/2018/03/02/密码学、数字签名/p4.png">
+<meta property="og:image" content="http://yoursite.com/2018/03/02/密码学、数字签名/p5.png">
+<meta property="og:image" content="http://yoursite.com/2018/03/02/密码学、数字签名/p6.png">
+<meta property="og:updated_time" content="2018-03-02T00:36:01.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="算法、数据、生活">
-<meta name="twitter:description" content="学习总结 思考感悟">
+<meta name="twitter:title" content="密码学、数字签名">
+<meta name="twitter:description" content="密码学基础 加密方法可以分为两大类。一类是单钥加密（private key cryptography），还有一类叫做双钥加密（public key cryptography）。前者的加密和解密过程都用同一套密码，后者的加密和解密过程用的是两套密码。 在单钥加密的情况下，密钥只有一把，所以密钥的保存变得很重要。一旦密钥泄漏，密码也就被破解。 在双钥加密的情况下，密钥有两把，一把是公开的公钥，还有一把">
+<meta name="twitter:image" content="http://yoursite.com/2018/03/02/密码学、数字签名/p1.png">
   
     <link rel="alternate" href="/atom.xml" title="算法、数据、生活" type="application/atom+xml">
   
@@ -57,8 +68,6 @@
   
 
   
-    <link rel="stylesheet" href="/css/archive.css" >
-  
   
   
 
@@ -66,7 +75,7 @@
 
 
 
-  <body>
+  <body data-spy="scroll" data-target="#toc" data-offset="50">
 
 
   
@@ -89,7 +98,7 @@
             
               <a class="brand" style="
                  margin-top: 0px;"  
-                 >
+                href="#" data-toggle="modal" data-target="#myModal" >
                   <img width="124px" height="124px" alt="Hike News" src="/css/images/pose.jpg">
               </a>
             
@@ -158,65 +167,134 @@
             
       <div id="content" class="outer">
         
-          <section id="main" style="float:none;">
-  
-  
-  
+          <section id="main" style="float:none;"><article id="post-密码学、数字签名" style="width: 75%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="article-inner">
     
     
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <h1><a href="/archives/2018" class="archive-year">2018</a></h1>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      
-	<a href="/2018/03/01/SSM框架整合/" class="archive-article-date">
-	  <time datetime="2018-03-01T05:45:35.000Z" itemprop="datePublished">2018-03-01</time>
-	</a>
-
-      
+      <header class="article-header">
+        
   
-    <h1 class="thumb" itemprop="name">
-      <a class="archive-article-title" href="/2018/03/01/SSM框架整合/">SSM框架整合</a>
+    <h1 class="thumb" class="article-title" itemprop="name">
+      密码学、数字签名
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
+      </header>
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
+    <div class="article-meta">
       
-	<a href="/2018/02/27/java项目结构/" class="archive-article-date">
-	  <time datetime="2018-02-27T05:23:31.000Z" itemprop="datePublished">2018-02-27</time>
+	<a href="/2018/03/02/密码学、数字签名/" class="article-date">
+	  <time datetime="2018-03-02T00:01:21.000Z" itemprop="datePublished">2018-03-02</time>
 	</a>
 
       
-  
-    <h1 class="thumb" itemprop="name">
-      <a class="archive-article-title" href="/2018/02/27/java项目结构/">基于Maven搭建Java后台项目工程结构</a>
-    </h1>
-  
+      
+	<a class="article-views">
+	<span id="busuanzi_container_page_pv">
+		阅读量<span id="busuanzi_value_page_pv"></span>
+	</span>
+	</a>
 
-    </header>
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="密码学基础"><a href="#密码学基础" class="headerlink" title="密码学基础"></a>密码学基础</h2><ol>
+<li>加密方法可以分为两大类。一类是单钥加密（private key cryptography），还有一类叫做双钥加密（public key cryptography）。前者的加密和解密过程都用同一套密码，后者的加密和解密过程用的是两套密码。</li>
+<li>在单钥加密的情况下，密钥只有一把，所以密钥的保存变得很重要。一旦密钥泄漏，密码也就被破解。</li>
+<li><p>在双钥加密的情况下，密钥有两把，一把是公开的公钥，还有一把是不公开的私钥。<br>双钥加密的原理如下：<br> a) 公钥和私钥是一一对应的关系，有一把公钥就必然有一把与之对应的、独一无二的私钥，反之亦成立。</p>
+<p> b) 所有的（公钥, 私钥）对都是不同的。</p>
+<p> c) 用公钥可以解开私钥加密的信息，反之亦成立。</p>
+<p> d) 同时生成公钥和私钥应该相对比较容易，但是从公钥推算出私钥，应该是很困难或者是不可能的。</p>
+</li>
+<li>目前，通用的单钥加密算法为DES（Data Encryption Standard），通用的双钥加密算法为RSA（ Rivest-Shamir-Adleman），都产生于上个世纪70年代。</li>
+<li>在双钥体系中，公钥用来加密信息，私钥用来数字签名。</li>
+<li>因为任何人都可以生成自己的（公钥，私钥）对，所以为了防止有人散布伪造的公钥骗取信任，就需要一个可靠的第三方机构来生成经过认证的（公钥，私钥）对。目前，世界上最主要的数字服务认证商是位于美国加州的Verisign公司，它的主要业务就是分发RSA数字证书。</li>
+</ol>
+<a id="more"></a>
+<h2 id="数字签名"><a href="#数字签名" class="headerlink" title="数字签名"></a>数字签名</h2><p>原文地址<a href="http://www.youdzone.com/signature.html" target="_blank" rel="noopener">数字签名图解</a></p>
+<ol>
+<li><p>鲍勃有两把钥匙，一把是公钥，另一把是私钥。</p>
+<img src="/2018/03/02/密码学、数字签名/p1.png">
+</li>
+<li><p>鲍勃把公钥送给他的朋友们—-帕蒂、道格、苏珊—-每人一把。</p>
+<img src="/2018/03/02/密码学、数字签名/p2.png"></li>
+<li><p>苏珊要给鲍勃写一封保密的信。她写完后用鲍勃的公钥加密，就可以达到保密的效果。</p>
+<img src="/2018/03/02/密码学、数字签名/p3.png">
+</li>
+<li><p>鲍勃收信后，用私钥解密，就看到了信件内容。这里要强调的是，只要鲍勃的私钥不泄露，这封信就是安全的，即使落在别人手里，也无法解密。</p>
+<img src="/2018/03/02/密码学、数字签名/p4.png"></li>
+<li>鲍勃给苏珊回信，决定采用”数字签名”。他写完后先用Hash函数，生成信件的摘要（digest）。<img src="/2018/03/02/密码学、数字签名/p5.png"></li>
+<li>然后，鲍勃使用私钥，对这个摘要加密，生成”数字签名”（signature）。<img src="/2018/03/02/密码学、数字签名/p6.png"></li>
+<li>鲍勃将这个签名，附在信件下面，一起发给苏珊。</li>
+<li>苏珊收信后，取下数字签名，用鲍勃的公钥解密，得到信件的摘要。由此证明，这封信确实是鲍勃发出的。</li>
+<li>苏珊再对信件本身使用Hash函数，将得到的结果，与上一步得到的摘要进行对比。如果两者一致，就证明这封信未被修改过。</li>
+<li>复杂的情况出现了。道格想欺骗苏珊，他偷偷使用了苏珊的电脑，用自己的公钥换走了鲍勃的公钥。此时，苏珊实际拥有的是道格的公钥，但是还以为这是鲍勃的公钥。因此，道格就可以冒充鲍勃，用自己的私钥做成”数字签名”，写信给苏珊，让苏珊用假的鲍勃公钥进行解密。</li>
+<li>后来，苏珊感觉不对劲，发现自己无法确定公钥是否真的属于鲍勃。她想到了一个办法，要求鲍勃去找”证书中心”（certificate authority，简称CA），为公钥做认证。证书中心用自己的私钥，对鲍勃的公钥和一些相关信息一起加密，生成”数字证书”（Digital Certificate）。</li>
+<li>鲍勃拿到数字证书以后，就可以放心了。以后再给苏珊写信，只要在签名的同时，再附上数字证书就行了。</li>
+<li>苏珊收信后，用CA的公钥解开数字证书，就可以拿到鲍勃真实的公钥了，然后就能证明”数字签名”是否真的是鲍勃签的。
+</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+        
+	<div id="comment">
+		<!-- 来必力City版安装代码 -->
+		<div id="lv-container" data-id="city" data-uid="MTAyMC8yOTQ4MS82MDQ5">
+		<script type="text/javascript">
+		   (function(d, s) {
+		       var j, e = d.getElementsByTagName(s)[0];
+
+		       if (typeof LivereTower === 'function') { return; }
+
+		       j = d.createElement(s);
+		       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+		       j.async = true;
+
+		       e.parentNode.insertBefore(j, e);
+		   })(document, 'script');
+		</script>
+		<noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+		</div>
+		<!-- City版安装代码已完成 -->
+	</div>
+
+
+
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/密码学/">密码学</a></li></ul>
+
+    </footer>
   </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2018/03/01/SSM框架整合/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">下一篇</strong>
+      <div class="article-nav-title">SSM框架整合</div>
+    </a>
+  
+</nav>
+
+  
 </article>
-  
-  
-    </div></section>
-  
 
+<!-- Table of Contents -->
 
+  <aside id="toc-sidebar">
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#密码学基础"><span class="nav-number">1.</span> <span class="nav-text">密码学基础</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数字签名"><span class="nav-number">2.</span> <span class="nav-text">数字签名</span></a></li></ol>
+    
+    </div>
+  </aside>
 </section>
         
       </div>
@@ -313,6 +391,8 @@
 
 
 
+  <script src="/js/dialog.js"></script>
+
 
 
 
@@ -396,6 +476,8 @@
   
   <a id="rocket" href="#top" class=""></a>
   <script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script>
+  
+    <a id="menu-switch"><i class="fa fa-bars fa-lg"></i></a>
   
 </body>
 </html>
